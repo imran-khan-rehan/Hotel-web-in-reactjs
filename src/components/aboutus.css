@@ -1,0 +1,226 @@
+.aboutcontainer {
+    margin: 0;
+    padding: 0;
+    width: 98vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.aboutdetail {
+    width: 40%;
+    padding-right: 5%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.abouttitle {
+    display: flex;
+    align-items: baseline;
+    font-family: "Playfair Display";
+    font-size: 40px;
+}
+
+#aboutname {
+    margin-right: 8px;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 9px;
+}
+
+.aboutvision {
+    width: 50%;
+    height: 60vh;
+    margin-left: 5%;
+    position: relative;
+
+}
+
+.aboutparagraph {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.watchvideo {
+    color: red;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+
+.watchvideo:hover {
+    color: #170101;
+    /* background-color: #170101; */
+}
+
+.videoarrow-button {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 0.5%;
+}
+
+.videoarrow-line {
+    position: absolute;
+    top: 45%;
+    left: 2px;
+    width: 15px;
+    height: 2px;
+    background-color: #f70909;
+    /* transform: translateY(-50%) rotate(45deg); */
+}
+
+.videoarrow-shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #f70707;
+    border-width: 2px 2px 0 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+#aboutfirstimage {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.videoimage {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249, 248, 248);
+    position: relative;
+}
+
+#secondimage img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    border: 7px solid white;
+}
+
+.play-icon {
+    font-size: 45px;
+    color: white;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 50px 35px;
+}
+
+#videomovies video {
+    display: block;
+    width: 98vw;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 21;
+    background-color: black;
+
+}
+
+#videootherarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#videonoarea {
+    display: none;
+}
+
+.close-button {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 42px;
+    cursor: pointer;
+    z-index: 25;
+    color: white;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+@media (max-width:940px) {
+
+    .aboutcontainer {
+        width: 98vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 100px;
+        position: relative;
+    }
+
+    .aboutdetail {
+        width: 80%;
+        padding-right: 5%;
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 5%;
+    }
+    .aboutvision {
+        width: 80%;
+        height: 60%;
+        margin-left: 5%;
+        position: relative;
+        padding-right: 5%;
+    }
+    #aboutfirstimage {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .videoimage {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(249, 248, 248);
+        position: relative;
+    }
+    #secondimage img {
+        width: 40%;
+        height: 50%;
+        position: absolute;
+        bottom: -60px;
+        right: -60px;
+        border: 7px solid white;
+    }
+    #videomovies video{
+        height: 100%;
+    }
+}
